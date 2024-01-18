@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+#p{
+  position:fixed;
+  bottom:400px;
+  left:200px;  
+  margin: 150px;
+  width: 50px;
+  height: 20px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scale(2,3);}
+#g{
+  position:fixed;
+  bottom:170px;
+  left:200px;  
+  margin: 150px;
+  width: 70px;
+  height: 20px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scale(2,3);}
+#t{
+  position:fixed;
+  bottom:0px;
+  left:200px;  
+  margin: 150px;
+  width: 90px;
+  height: 20px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scale(2,3);}
+#d{
+  position:fixed;
+  bottom:400px;
+  right:200px;  
+  margin: 150px;
+  width: 50px;
+  height: 20px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scale(2,3);}
+#x{
+  position:fixed;
+  bottom:170px;
+  right:180px;  
+  margin: 150px;
+  width: 100px;
+  height: 20px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scale(2,3);}
+#h{
+  position:fixed;
+  bottom:0px;
+  right:180px;  
+  margin: 150px;
+  width: 110px;
+  height: 20px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scale(2,3);}
+
+
+#cls:hover{width: 190px;
+           height: 170px;}
+
+.c1 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  position:fixed;
+  top:120px;
+  left:30px;
+  width: 180px;
+}
+.c2 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  position:fixed;
+  top:330px;
+  left:30px;
+  width: 180px;
+}
+.c3 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  position:fixed;
+  top:550px;
+  left:30px;
+  width: 180px;
+}
+.c4 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: right;
+  position:fixed;
+  top:120px;
+  right:30px;
+  width: 180px;
+}
+.c5 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: right;
+  position:fixed;
+  top:330px;
+  right:30px;
+  width: 180px;
+}
+.c6 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: right;
+  position:fixed;
+  top:550px;
+  right:30px;
+  width: 180px;
+}
+
+#cls:hover {
+  border: 1px solid #777;
+}
+
+#cls img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  position:fixed;
+  bottom:25px;
+  left:550px;
+  font-size:30px;
+  color:black;
+  padding: 15px;
+  text-align: center;
+}
+
+   
+
+
+body {
+  background-color:white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #38444d;
+}
+
+li {
+  float: left;
+}
+
+li a.home, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a.home:hover, .dropdown:hover .dropbtn {
+  background-color: #00ffaa;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.buy {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.buy a.home2 {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color:#aaccbb;
+  border:2px groove black;
+}
+
+.buy a.home2:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .buy {
+  display: block;
+}
+
+.cross{
+  display: inline-block;
+  float:right;
+  padding: 12px 16px;
+  background-color: #d6d6d6;
+  border:2px solid grey;
+  color:grey;
+}
+
+.cross:hover{background-color:red;}
+
+#two{position:fixed;
+     left:600px;
+     border:5px groove #324501;
+     box-shadow:10px 10px 5px lightblue;}
+
+p{text-shadow:10px 10px 10px lightgreen;
+   font-family:"Monotype Corsiva";
+   color:green;
+   font-size:50px;
+   text-align:center;}
+body{background-repeat:no-repeat;
+     background-size:1550px 750px;}
+
+
+#two {
+  width: 400px;
+  height: 400px;
+  transition: width 2s,height 2s;
+}
+#two:hover {width:300px;
+            height:300px;
+		}
+
+</style>
+</head>
+<body background="https://t3.ftcdn.net/jpg/01/72/31/82/360_F_172318263_046YEZYCK2hDGJR6X6lm4Gbaxar65Rew.jpg">
+
+<ul>
+  <li><a class="home"  href="https://en.wikipedia.org/wiki/List_of_musical_instruments">About</a></li>
+  <li><a class="home"  href="page2.html">Apps Recommended</a></li>
+  <li class="dropdown">
+    <a class="home"  href="javascript:void(0)" class="dropbtn">Buy</a>
+    <div class="buy">
+      <a class="home2" href="https://www.amazon.in/">Amazon</a>
+      <a class="home2" href="https://www.flipkart.com/">Flipcart</a>
+      <a class="home2" href="https://www.bajaao.com/">Bajaao</a>
+    </div>
+  </li>
+  <li class="cross"><a href="page3.html">X</a></li>
+</ul>
+<p><u>INSTRUMENTS</u></p>
+<img id="two" title="Welcome to the musical World!!!" src="https://img.freepik.com/free-vector/different-kinds-musical-instruments_1308-3320.jpg" alt="error">
+
+<a href="piano.html"><img class="c1" id="cls" src="https://png.pngtree.com/png-vector/20201208/ourlarge/pngtree-jet-black-grand-piano-musical-instruments-isolated-vector-png-image_2520636.jpg" alt="oops" title="Piano">
+<a href="guitar.html"><img class="c2" id="cls" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9KvGdnNw1kAMboFFicCZpRkhm1NpPYgcdkpFt8ya9lae93ff5ZkXJVmsEvVKgd1MNDA0&usqp=CAU" alt="oops" title="Guitar">
+<a href="trumpet.html"><img class="c3" id="cls" src="https://media.istockphoto.com/id/137129980/photo/brass-trumpet-on-white-background.jpg?s=170667a&w=0&k=20&c=ije-r_NN30j-p56iZ3Y3aLyHWhoos8xc2mH2_ZeY1Rs=" alt="oops" title="Trumpet">
+<a href="drum.html"><img class="c4" id="cls" src="https://4.imimg.com/data4/TA/TX/MY-3827796/drum-set-500x500.jpg" alt="oops" title="Drum">
+<a href="xylophone.html"><img class="c5" id="cls" src="https://m.media-amazon.com/images/I/71TuTfhYH+L._SY355_.jpg" alt="oops" title="Xylophone">
+<a href="harmonica.html"><img class="c6" id="cls" src="https://m.media-amazon.com/images/I/618XVTztWoL._SL1500_.jpg" alt="oops" title="Mouth Organ">
+
+ <div class="desc">
+ <a href="https://en.wikipedia.org/wiki/Music"> Where words fail ,MUSIC speaks!!!</a></div>
+ 
+<div id="p" class="hi"><a href="https://en.wikipedia.org/wiki/Piano">
+PIANO</a>
+</div>
+<div id="g" class="hi"><a href="https://en.wikipedia.org/wiki/Guitar">
+GUITAR</a>
+</div>
+<div id="t" class="hi"><a href="https://en.wikipedia.org/wiki/Trumpet">
+TRUMPET</a>
+</div>
+<div id="d" class="hi"><a href="https://en.wikipedia.org/wiki/Drum">
+DRUM</a>
+</div>
+<div id="x" class="hi"><a href="https://en.wikipedia.org/wiki/Xylophone">
+XYLOPHONE</a>
+</div>
+<div id="h" class="hi"><a href="https://en.wikipedia.org/wiki/Harmonica">
+HARMONICA</a>
+</div>
+
+
+</body>
+</html>
